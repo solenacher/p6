@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary: #4f4f4f ;
+            --color-secundary:#ff9393 ;
+            --color-bg:#f3e3e3 ;
+            --color-black: #000000;
+        }
+        .card_txt{
+            font-family:'Roboto', sans-serif;
+        }
+        .gallery{
+            padding: 1em;
+            display: flex;
+            flex-wrap:wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex: grow 1;
+            flex-basis: 26%;
+            flex-direction:column;
+            border: solid 0.3em var(--color-secundary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:first-child img{
+            object-position: top;
+        }
+        .card:nth-child(2), .card:nth-child(5){
+            flex:1 3 10%;
+        }
+        .card_img{
+            width:100% ;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt{
+            display: flex;
+            flex-direction: column;
+            padding: 1.7em 0 0 0;
+            justify-content: flex-start;
+        }
+        .card_txt h1{
+            font-size:1em;
+            flex-grow:1;
+            color:var(--color-primary);
+            letter-spacing:0.25em;
+            font-variant: small-caps;
+        }
+        .card_txt h2{
+            justify-content:flex-start;
+            font-size:1.7em;
+            color:var(--color-primary);
+            font-weight: 700;
+            padding:0.1em 0 0.6em 0;
+        }
+        .card_txt p{
+            text-transform:4px; 
+            font-weight:100 ;
+            font-size: 0.8em;
+        }
+
+    </style>
+</head>
+<body>
+   <main>
+    <div class="gallery">
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/img1.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>velazquez</h1>
+                <h2>Juan de Pareja</h2>
+                <p>Velázquez most likely executed this portrait of his enslaved assistant in Rome during the early months of 1650. According to one of the artist's biographers, when this landmark of western portraiture was first put on display it "received such universal acclaim that in the opinion of all the painters of different."</p>
+            </header>
+        </div>
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/img2.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>cézanne</h1>
+                <h2>Madame Cézanne </h2>
+                <p>Of the four portraits that Cézanne painted of his wife wearing a shawl-collared red dress, this is the only one to show her in an elaborately furnished interior. Seated in a high-backed yellow chair and wedged between well-placed props that seem to bend to her form and shift to her weight, Madame Cézanne is the lynchpin of a tilting, spatially complex composition.</p>
+            </header>
+        </div>
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/img3.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>jean honoré</h1>
+                <h2>A Woman a Dog</h2>
+                <p>This painting belongs to a celebrated group of Fragonards known as the fantasy figures. The canvas is broadly brushed, with exceptional virtuosity, panache, and a sense of speed. The model has recently been identified as the aristocratic salon hostess Marie Emilie Coignet de Courson (1716–1806).  </p>
+            </header>
+        </div>
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/img4.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>manet</h1>
+                <h2>Spanish singer</h2>
+                <p>This painting, which reflects the Parisian vogue for Spanish art and culture during the Second Empire, won Manet his first popular and critical success in his debut at the Salon of 1861. Though the picture was admired for its realistic detail, Manet did not disguise the fact that it was composed. 
+                </p>
+            </header>
+        </div>
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/img5.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>juspe de ribera</h1>
+                <h2>The Holy Family</h2>
+                <p>A masterpiece of the artist’s maturity, this painting combines the naturalism and quality of physical presence associated with Caravaggio with the elevated formal language of Raphael. Spanish by birth, Ribera lived all of his adult life in Rome and Naples, then part of the Spanish Empire.During his early years in Rome, he adopted Caravaggio’s practice.</p>
+            </header>
+        </div>
+        <div class="card">
+            <figure class="card_img">
+                <img src="img/img6.jpg" alt="">
+            </figure>
+            <header class="card_txt">
+                <h1>goya</h1>
+                <h2>Manuel Osorio</h2>
+                <p>Outfitted in a splendid red costume, the son of the Count and Countess of Altamira is shown between a cage of finches and three wide-eyed cats who appear captivated by the boy’s pet magpie. In its beak the magpie holds Goya’s calling card and signature. Goya may have intended this cast of animals.</p>
+        </div>
+    </div>
+   </main> 
+</body>
+</html>
